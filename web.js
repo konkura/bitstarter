@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
         
-    var data=fs.readFileSync('index.html',{encoding: 'utf8'});
+    var data=fs.readFileSync('index.html',{encoding: 'ascii'});
 	response.send(data);
   
 
