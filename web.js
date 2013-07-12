@@ -5,7 +5,8 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-        
+
+response.send('here');        
     var data=fs.readFileSync('index.html',{encoding: 'us-ascii'});
 	response.send(data);
   
